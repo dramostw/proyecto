@@ -78,6 +78,10 @@ nav ul li{
     padding: 5px;
     border-radius: 15px;
 }
+nav ul li:hover{
+    background-color: rgb(220, 220, 220);
+    transform: scale(0.8);
+}
 header{
     background-color: lightblue;
     display: flex;
