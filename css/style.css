@@ -18,7 +18,7 @@ h1{
     display: none;
 }
 
-ul{
+footer nav ul{
     list-style: none;
     text-align: center;
 }
@@ -72,13 +72,13 @@ body main div div table td{
     justify-items: center;
 }
 
-nav ul li{
+footer nav ul li{
     background-color:whitesmoke;
     margin: 5px;
     padding: 5px;
     border-radius: 15px;
 }
-nav ul li:hover{
+footer nav ul li:hover{
     background-color: rgb(220, 220, 220);
     transform: scale(0.8);
 }
@@ -351,7 +351,7 @@ h1{
    .menu1{
     display: block;
    }
-   nav ul li{
+   footer nav ul li{
     margin: 10px;
     padding: 10px;
     display: inline-block;}
