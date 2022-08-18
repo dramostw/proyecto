@@ -141,12 +141,7 @@ footer h3{
 .caja4{
     grid-area: caja4;
 }
-.nosotros{
-    text-decoration: solid;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    height: 20vh;
-    }
+
 
 footer nav ul li{
     margin: 5px;
