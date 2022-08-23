@@ -22,6 +22,10 @@ footer nav ul{
     list-style: none;
     text-align: center;
 }
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
 .menu2{
     display: none;
 }
@@ -54,6 +58,12 @@ padding: 5px;
 body main div div table td{
     margin: 5px;
     padding: 5px;
+}
+.titulo{
+    font-size: larger;
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
 }
 
 .grid-i{
@@ -94,13 +104,28 @@ body{
    height: 100vh;
 }
 
+.p-nosotros{
+    height: 100%;
+    align-content: center;
+    
+}
+
 h2{
+    height: auto;
     font-size: larger;
     font-weight: bold;
     font-style: italic;
     margin-bottom: 20px;
 }
-
+.enc-competencias{
+    display: flex;
+    flex-direction: column;
+}
+.enc-competencias whatsapp{
+    display: flex;    
+    align-items: flex-end;
+        width: auto;
+}
 
 .resu{
     text-align: center;
@@ -159,7 +184,7 @@ footer{
 .formulario{
         display: flex;
         flex-direction: column;
-        
+        margin: 20px;
         width: 100%;
 
     }
@@ -340,6 +365,10 @@ h1{
     h1{
         font-size: 2.5rem;
     }
+    .titulo{
+        text-align: start;
+    }
+    
     .portada{
         grid-area: portada;
         display: flex;
@@ -395,8 +424,13 @@ h1{
                         "footer footer"
     ;
 }
+.whatsapp{
+    align-items: flex-end;
+    margin-right: 20%;
+}
 
 }
+
 
 @media screen and (min-width: 1080px) {
     
