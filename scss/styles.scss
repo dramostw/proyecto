@@ -4,6 +4,9 @@
 @import "./utilites/mixin";
 //mixin en linea 99
 
+@import "./utilites/extend";
+@import "./utilites/mapas";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -222,49 +225,20 @@ h3{
 
 .paletas{
     grid-area: paletas;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-items: center;
+    @extend %items;
 }
 .zapatillas{
     grid-area: zapatillas;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-items: center;
+    @extend %items;
 }
-
 
 .shorts{
     grid-area: shorts;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-items: center;
+    @extend %items;
 }
 .remeras{
     grid-area: remeras;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-items: center;
+    @extend %items;
 }
 .productos{
     display: flex;
@@ -367,16 +341,19 @@ td#encabezado{
         text-align: center;
         box-shadow: 2px 2px 10px;
         margin: 20px;
-        div label{
+        div {
+            margin: 30px;
+        label{
             font-family: 'Times New Roman', Times, serif;
             margin: 1rem;
-        }
+            }
             input{
                 margin: 10px;
                 padding: 10px;
             }
+            
     }
-
+    }
 }
 
 /*mediaqueries*/
