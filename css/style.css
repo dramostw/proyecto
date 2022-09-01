@@ -5,9 +5,6 @@
   padding: 0px;
   box-sizing: border-box; }
 
-h1 {
-  text-align: center; }
-
 .portada {
   display: none;
   width: 100%; }
@@ -38,23 +35,27 @@ footer nav ul {
   display: none;
   grid-area: pic-clubes; }
 
+body main h2 {
+  height: auto;
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px; }
+
 body main div div h2 {
   text-align: center; }
 
 body main div div table {
   min-width: 50vw; }
-
-body main div div table th {
-  font-size: medium;
-  font-weight: bold; }
-
-body main div div table tr {
-  margin: 5px;
-  padding: 5px; }
-
-body main div div table td {
-  margin: 5px;
-  padding: 5px; }
+  body main div div table th {
+    font-size: medium;
+    font-weight: bold; }
+  body main div div table tr {
+    margin: 5px;
+    padding: 5px; }
+  body main div div table td {
+    margin: 5px;
+    padding: 5px; }
 
 .titulo {
   font-size: larger;
@@ -69,46 +70,30 @@ body main div div table td {
   grid-template-areas: "whatsapp"                         "caja1" "caja2" "caja3" "caja4" "clubes" "footer";
   justify-items: center; }
 
-footer nav ul li {
-  background-color: whitesmoke;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 15px; }
-
-footer nav ul li:hover {
-  background-color: gainsboro;
-  transform: scale(0.8); }
-
-header {
-  background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; }
-
 body {
   background-color: aliceblue;
   height: 100vh; }
+  body header {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    body header h1 {
+      text-align: center;
+      margin: 30px; }
 
 .p-nosotros {
   height: 100%;
   align-content: center; }
 
-h2 {
-  height: auto;
-  font-size: larger;
-  font-weight: bold;
-  font-style: italic;
-  margin-bottom: 20px; }
-
 .enc-competencias {
   display: flex;
   flex-direction: column; }
-
-.enc-competencias whatsapp {
-  display: flex;
-  align-items: flex-end;
-  width: auto; }
+  .enc-competencias whatsapp {
+    display: flex;
+    align-items: flex-end;
+    width: auto; }
 
 .resu {
   text-align: center;
@@ -117,10 +102,6 @@ h2 {
   font-weight: bold;
   font-size: larger;
   margin: 15px; }
-
-footer h3 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: small; }
 
 .whatsapp {
   grid-area: whatsapp;
@@ -146,11 +127,6 @@ footer h3 {
 .caja4 {
   grid-area: caja4; }
 
-footer nav ul li {
-  margin: 5px;
-  padding: 5px;
-  border-radius: 15px; }
-
 footer {
   background-color: lightblue;
   align-self: flex-end;
@@ -158,6 +134,17 @@ footer {
   text-align: center;
   margin-bottom: 0px;
   padding: 12px; }
+  footer nav ul li {
+    background-color: whitesmoke;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px; }
+  footer h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small; }
+  footer nav ul li:hover {
+    background-color: gainsboro;
+    transform: scale(0.8); }
 
 h3 {
   font-size: medium;
@@ -168,6 +155,11 @@ h3 {
   grid-template-columns: auto;
   grid-template-rows: auto;
   grid-template-areas: "whatsapp"  "tienda"                        "paletas" "zapatillas" "shorts" "remeras" "promo" "carrito"; }
+  .grid-t .tienda {
+    grid-area: tienda;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic; }
 
 .item {
   height: auto;
@@ -175,12 +167,6 @@ h3 {
   width: auto;
   padding: 10px;
   margin: 10px; }
-
-.tienda {
-  grid-area: tienda;
-  font-size: larger;
-  font-weight: bold;
-  font-style: italic; }
 
 .paletas {
   grid-area: paletas;
@@ -285,9 +271,8 @@ h3 {
   width: 100%;
   height: fit-content;
   justify-content: center; }
-
-main table tbody tr td {
-  text-align: center; }
+  .competencias tbody tr td {
+    text-align: center; }
 
 .pasos-inscripcion {
   margin-top: 40px;
@@ -303,13 +288,11 @@ td#encabezado {
   display: inline-block;
   flex-flow: wrap;
   text-align: start; }
+  .pasos li {
+    font-family: fantasy; }
 
 .portada {
   grid-area: portada; }
-
-h1 {
-  text-align: center;
-  margin: 30px; }
 
 .formulario {
   display: flex;

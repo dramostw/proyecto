@@ -1,13 +1,11 @@
 /*comentario en CSS*/
 /*reseteamos los estilos de margenes y bordes*/
+@import "./utilites/variables";
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-h1{
-    text-align: center;
 }
 
 .portada{
@@ -41,24 +39,36 @@ footer nav ul{
     display: none;
     grid-area: pic-clubes;
 }
-body main div div h2{
+body main {
+    h2{
+        height: auto;
+        font-size: larger;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    div div{ h2{
     text-align: center;
+    }
+    table{
+        min-width: 50vw;
+        th{
+            font-size: medium;
+            font-weight: bold;
+        }
+        tr{
+            margin: 5px;
+            padding: 5px;
+            }
+        td{
+            margin: 5px;
+            padding: 5px;
+        }
+    }
 }
-body main div div table{
-    min-width: 50vw;
 }
-body main div div table th{
-    font-size: medium;
-    font-weight: bold;
-}
-body main div div table tr{
-margin: 5px;
-padding: 5px;
-}
-body main div div table td{
-    margin: 5px;
-    padding: 5px;
-}
+
+
 .titulo{
     font-size: larger;
     margin: 25px;
@@ -81,27 +91,20 @@ body main div div table td{
     ;
     justify-items: center;
 }
-
-footer nav ul li{
-    background-color:whitesmoke;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 15px;
-}
-footer nav ul li:hover{
-    background-color: rgb(220, 220, 220);
-    transform: scale(0.8);
-}
-header{
-    background-color: lightblue;
+body{
+    background-color: $color-principal;
+    height: 100vh;
+        header{
+    background-color: $color-secundario;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-body{
-    background-color: aliceblue;
-   height: 100vh;
+            h1{
+            text-align: center;
+            margin: 30px;
+       }
+   }
 }
 
 .p-nosotros{
@@ -110,21 +113,15 @@ body{
     
 }
 
-h2{
-    height: auto;
-    font-size: larger;
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 20px;
-}
+
 .enc-competencias{
     display: flex;
     flex-direction: column;
-}
-.enc-competencias whatsapp{
-    display: flex;    
-    align-items: flex-end;
-        width: auto;
+    whatsapp{
+        display: flex;    
+        align-items: flex-end;
+            width: auto;
+    }
 }
 
 .resu{
@@ -135,12 +132,7 @@ h2{
     font-size: larger;
     margin: 15px;
 }
-
-footer h3{
-    
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
-}
+ 
 .whatsapp{
     grid-area: whatsapp;
     width: 100%;
@@ -167,19 +159,28 @@ footer h3{
     grid-area: caja4;
 }
 
-
-footer nav ul li{
-    margin: 5px;
-    padding: 5px;
-    border-radius: 15px;
-}
 footer{
-        background-color: lightblue;
+        background-color: $color-secundario;
         align-self: flex-end;
         height: 40px;
         text-align: center;
         margin-bottom: 0px;
         padding: 12px;
+        nav ul li{
+            background-color:$color-botones;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+        h3{
+    
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+        nav ul li:hover{
+            background-color: rgb(220, 220, 220);
+            transform: scale(0.8);
+        }
     }
 
 h3{
@@ -200,6 +201,12 @@ h3{
                         "remeras"
                         "promo"
                         "carrito";
+        .tienda{
+                grid-area: tienda;
+                font-size: larger;
+                font-weight: bold;
+                font-style: italic;   
+            }
     
 }
 .item{
@@ -209,12 +216,7 @@ h3{
     padding: 10px;
     margin: 10px;
 }
-.tienda{
-    grid-area: tienda;
-    font-size: larger;
-    font-weight: bold;
-    font-style: italic;   
-}
+
 .paletas{
     grid-area: paletas;
     margin-left: auto;
@@ -321,9 +323,9 @@ h3{
     width: 100%;
     height: fit-content;
     justify-content: center;
-}
-main table tbody tr td{
-    text-align: center;
+    tbody tr td{
+        text-align: center;
+    }
 }
 .pasos-inscripcion{
     margin-top: 40px;
@@ -339,16 +341,16 @@ td#encabezado{
     display: inline-block;
     flex-flow: wrap;
     text-align: start; 
+    li{
+        font-family: fantasy;
+    }
 }
 .portada{
     grid-area: portada;
 
 }
 
-h1{
-    text-align: center;
-    margin: 30px;
-   }
+
 //APLICACION DE SASS A LOS ESTILOS DEL FORMULARIO EN LA PAGINA CONTACTO
 .formulario{
     display: flex;
