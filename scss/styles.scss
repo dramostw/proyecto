@@ -48,33 +48,34 @@ body main {
         font-style: italic;
         margin-bottom: 20px;
     }
-    div div{ h2{
-    text-align: center;
-    }
-    table{
+    div div{ 
+        h2{
+            text-align: center;
+        }
+        table{
         min-width: 50vw;
-        th{
+            th{
             font-size: medium;
             font-weight: bold;
-        }
-        tr{
+            }
+            tr{
+                margin: 5px;
+                padding: 5px;
+                }
+            td{
             margin: 5px;
             padding: 5px;
             }
-        td{
-            margin: 5px;
-            padding: 5px;
-        }
     }
 }
 }
 
 
 .titulo{
-    font-size: larger;
-    margin: 25px;
-    padding: 10px;
-    text-align: center;
+    font-size: map-get($map: $titulo, $key: font-titulo);
+    margin: map-get($map: $titulo, $key: margin-titulo);
+    padding: map-get($map: $titulo, $key: padding-titulo);
+    text-align: map-get($map: $titulo, $key: t-align-titulo);
 }
 
 .grid-i{
@@ -322,7 +323,6 @@ td#encabezado{
 }
 .portada{
     grid-area: portada;
-
 }
 
 
