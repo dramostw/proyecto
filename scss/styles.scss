@@ -119,8 +119,9 @@ body{
 
 .enc-competencias{
     display: flex;
-    flex-direction: column;
-    whatsapp{
+    flex-direction: row;
+    justify-content: space-between;
+    .whatsapp{
         display: flex;    
         align-items: flex-end;
             width: auto;
